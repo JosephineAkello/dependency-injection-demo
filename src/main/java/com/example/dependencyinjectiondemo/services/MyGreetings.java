@@ -1,4 +1,7 @@
 package com.example.dependencyinjectiondemo.services;
 
-public interface MyGreetings {
+public interface MyGreetings{
+
+    String sayGreeting();
+
 }
