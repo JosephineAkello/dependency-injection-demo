@@ -1,10 +1,10 @@
 package com.example.dependencyinjectiondemo.contollers;
 
-import com.example.dependencyinjectiondemo.services.MyGreetings;
+import com.example.dependencyinjectiondemo.services.MyGreetingsService;
 
 public class PropertyInjectedController{
 
-    public MyGreetings myGreetings;
+    public MyGreetingsService myGreetings;
 
     public String getGreeting(){
 
