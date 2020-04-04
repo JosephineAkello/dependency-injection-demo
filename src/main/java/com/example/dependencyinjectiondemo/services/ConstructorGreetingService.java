@@ -3,9 +3,9 @@ package com.example.dependencyinjectiondemo.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class MyGreetingsImpl implements MyGreetingsService {
+public class ConstructorGreetingService implements MyGreetingsService {
     @Override
     public String sayGreeting() {
-        return "Hello world";
+        return "Hello world..constructor";
     }
 }

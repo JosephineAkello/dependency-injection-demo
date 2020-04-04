@@ -1,11 +1,8 @@
 package com.example.dependencyinjectiondemo.contollers;
 
-import com.example.dependencyinjectiondemo.services.MyGreetingsImpl;
-import com.example.dependencyinjectiondemo.services.MyGreetingsService;
+import com.example.dependencyinjectiondemo.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class SetterBasedControllerTest {
 
@@ -14,7 +11,7 @@ class SetterBasedControllerTest {
     @BeforeEach
     void setUp() {
         setterBasedController = new SetterBasedController();
-        setterBasedController.setMyGreetingsService(new MyGreetingsImpl());
+        setterBasedController.setMyGreetingsService(new ConstructorGreetingService());
 
 
     }
