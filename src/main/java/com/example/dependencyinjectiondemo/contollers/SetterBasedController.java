@@ -1,4 +1,17 @@
 package com.example.dependencyinjectiondemo.contollers;
 
-public class SetterBasedController {
+import com.example.dependencyinjectiondemo.services.MyGreetingsService;
+
+public class SetterBasedController{
+
+    private MyGreetingsService myGreetingsService;
+
+    public  void setMyGreetingsService(MyGreetingsService myGreetingsService){
+        this.myGreetingsService = myGreetingsService;
+    }
+
+    public String getGreeting(){
+        return  myGreetingsService.sayGreeting();
+    }
+
 }
