@@ -4,7 +4,7 @@ public class FakeDataSource {
     private String user;
     private String password;
     private String url;
-    
+
     public String getUser() {
         return user;
     }
